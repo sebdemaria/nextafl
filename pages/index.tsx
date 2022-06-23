@@ -8,6 +8,8 @@ import { NextPageWithLayout } from "./page";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
+    await fetch(`localhost:3000/api/locale/${locale}`);
+
     return {
         props: {
             ...(await serverSideTranslations(locale!, ["common"])),
