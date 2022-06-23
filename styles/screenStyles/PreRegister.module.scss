@@ -1,0 +1,75 @@
+@import "./../sass-utils/indexUtils.module";
+
+@keyframes anim {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(1);
+    }
+}
+
+.firstSection {
+    @include colorfulBackground;
+    @include fontWhite;
+
+    .greenLine {
+        color: $main-green !important;
+    }
+
+    .mailing {
+        font-size: 75%;
+    }
+
+    .mainImage {
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .disable {
+        cursor: none;
+        display: block;
+        pointer-events: none;
+    }
+
+    .error {
+        background-color: red;
+        display: block;
+        padding-top: 0.1em;
+        width: 6%;
+    }
+
+    .success {
+        width: 6%;
+    }
+
+    .errorMessage {
+        animation: anim 1s ease-in-out;
+        border: 1px solid $error-red;
+        border-radius: 50em;
+        box-shadow: inset 0px 0px 5px 0.5px $error-red;
+        color: #ff8989;
+        font-weight: 500;
+    }
+
+    .successMessage {
+        animation: anim 1s ease-in-out;
+        border: 1px solid $main-green;
+        border-radius: 50em;
+        box-shadow: inset 0px 0px 5px 0.5px $main-green;
+        color: $main-green;
+        font-weight: 500;
+    }
+}

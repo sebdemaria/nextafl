@@ -1,0 +1,153 @@
+@import "variables.module";
+
+//Breakpoint media queries
+@mixin mobileSm() {
+    @media (max-width: $sm) {
+        @content;
+    }
+}
+
+@mixin tabletMd() {
+    @media (max-width: $md) {
+        @content;
+    }
+}
+
+@mixin desktopLg() {
+    @media (max-width: $lg) {
+        @content;
+    }
+}
+
+@mixin desktopXl() {
+    @media (max-width: $xl) {
+        @content;
+    }
+}
+
+@mixin desktopXxl() {
+    @media (max-width: $xxl) {
+        @content;
+    }
+}
+
+@mixin languageDropdown {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .form-select {
+        width: max-content;
+    }
+}
+
+//style and color mixins
+
+@mixin background-darkBlue {
+    background-color: $main-dark-blue;
+}
+
+@mixin background-lightBlue {
+    background-color: $main-light-blue;
+}
+
+@mixin background-lightBlue-yesscredit {
+    background-color: $yesscredit-light-blue;
+}
+
+@mixin background-darkBlue-yesscredit {
+    background-color: $yesscredit-dark-blue;
+}
+
+@mixin beltColorfulBackground {
+    background: linear-gradient(
+            73deg,
+            #912c5b,
+            #530d68 40%,
+            #3426af,
+            rgba(255, 0, 0, 0) 80%
+        ),
+        linear-gradient(40deg, #1e32c7, #2e9ae2 85%);
+}
+
+@mixin colorfulBackground {
+    background: $backgroundRainbowGradient;
+}
+
+@mixin fontGreen {
+    color: $main-green;
+}
+
+@mixin fontWhite {
+    color: $color-white;
+}
+
+@mixin greenLine {
+    @include fontGreen;
+}
+
+@mixin highlightWeight600 {
+    font-weight: $font-weight-600;
+}
+
+@mixin highlightWeight100 {
+    font-weight: $font-weight-100;
+}
+
+@mixin borderRadius10px {
+    border-radius: 10px;
+}
+
+@mixin borderRadius9px {
+    border-radius: 9px;
+}
+
+@mixin separatorWhite {
+    .separatorWhite:not(:last-child) {
+        border-right: 1px solid white;
+    }
+}
+
+//spacing mixins
+
+@mixin mainSectionsPushPaddingLg {
+    padding-top: 13em;
+}
+
+@mixin mainSectionsPushPaddingXsMd {
+    padding-top: 11em;
+}
+
+@mixin centerSection {
+    display: $display-flex;
+    justify-content: center;
+}
+
+@mixin centerSectionWrap {
+    display: $display-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin spaceAround-Wrap {
+    display: $display-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@mixin centerSectionWrap {
+    display: $display-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin spaceBetween-Wrap {
+    display: $display-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin flex-spaceAround {
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,42 @@
+@import "./../sass-utils/indexUtils.module";
+
+.footer {
+    background-color: $main-dark-blue;
+    box-shadow: 0 3px 15px 3px rgb(0 0 0 / 45%);
+    bottom: 0;
+    color: $main-lightgray-color;
+    height: max-content;
+    margin-top: auto;
+    padding: 2em 0.5rem 7rem 0.5rem;
+    position: relative;
+}
+
+.hr {
+    background-color: $main-green;
+    border: none;
+    height: 0.5px;
+    opacity: 0.5;
+}
+
+.languageSelector {
+    background-color: transparent;
+    border: 1px solid $main-green;
+    border-radius: 50em;
+    display: flex;
+    float: right;
+    font-weight: 500;
+    left: unset;
+    margin-top: 3em;
+    min-width: max-content;
+    padding: 0.4em;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+@media (min-width: $lg) {
+    .languageSelector {
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,23 @@
+@import "./../sass-utils/indexUtils.module";
+
+.languageSelector {
+    background-color: transparent;
+    border: 1px solid $main-green;
+    border-radius: 50em;
+    display: flex;
+    float: right;
+    font-weight: 500;
+    left: unset;
+    min-width: max-content;
+    padding: 0.4em;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+@media (min-width: $lg) {
+    .languageSelector {
+        // margin-top: 1em;
+    }
+}

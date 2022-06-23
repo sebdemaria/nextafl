@@ -1,0 +1,66 @@
+@import "./../sass-utils/indexUtils.module";
+
+.firstSection {
+    @include colorfulBackground;
+    @include fontWhite;
+
+    .greenLine {
+        color: $main-green !important;
+    }
+
+    .mailing {
+        color: white;
+        font-size: 75%;
+
+        &::placeholder {
+            color: $color-white;
+            font-size: 90%;
+            font-weight: 600;
+        }
+    }
+
+    .mainImage {
+        width: 50%;
+    }
+}
+
+.secondSection {
+    background-color: $main-light-blue;
+    @include background-lightBlue;
+    @include fontWhite;
+
+    .video {
+        box-shadow: $video-box-shadow;
+        height: auto;
+        width: 100%;
+
+        @media (max-width: $lg) {
+            width: 90%;
+        }
+    }
+}
+
+.thirdSection {
+    @include background-darkBlue;
+    @include fontWhite;
+}
+
+.fourthSection {
+    @include background-lightBlue;
+    @include fontWhite;
+}
+
+.fifthSection {
+    background-color: $color-black;
+    color: $color-white;
+
+    .statsText {
+        text-transform: uppercase;
+    }
+
+    @media (min-width: $xl) {
+        .statistics:not(:last-child) {
+            border-right: 1px solid white;
+        }
+    }
+}

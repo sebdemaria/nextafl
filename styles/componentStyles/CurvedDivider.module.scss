@@ -1,0 +1,14 @@
+.curveBottom > span {
+    // used !important to override Next js image component
+    // next has a bug in the component that doesnt let you
+    // override the inline styles in it
+    height: max-content;
+    width: 100% !important;
+
+    img {
+        top: inherit !important;
+        max-height: inherit !important;
+        width: inherit !important;
+        height: inherit !important;
+    }
+}

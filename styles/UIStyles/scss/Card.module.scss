@@ -1,0 +1,11 @@
+@import "./../../sass-utils/indexUtils.module";
+
+.card::before {
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+
+    @-moz-document url-prefix() {
+        -webkit-mask-composite: exclude;
+    }
+}

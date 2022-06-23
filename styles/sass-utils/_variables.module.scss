@@ -1,0 +1,49 @@
+//Breakpoints
+$sm: "30em";
+$md: "48em";
+$lg: "62em";
+$xl: "80em";
+$xxl: "96em";
+
+// displays
+$display-flex: flex;
+
+// colors
+$color-black: #000000;
+$color-white: #ffffff;
+$colorBorderLinearGradient: linear-gradient(
+        110deg,
+        #912c5b,
+        #530d68,
+        #1e32c7,
+        #2e9ae2 85%
+    ),
+    linear-gradient(110deg, #2e9ae2, #1e32c7, #530d68, #912c5b),
+    linear-gradient(110deg, #2e9ae2, #1e32c7, #530d68, #912c5b),
+    linear-gradient(110deg, #912c5b, #530d68, #1e32c7, #2e9ae2 85%);
+
+$backgroundRainbowGradient: linear-gradient(
+        155deg,
+        black,
+        rgba(255, 0, 0, 0) 50%
+    ),
+    linear-gradient(
+        73deg,
+        #912c5b,
+        #530d68 40%,
+        #3426af,
+        rgba(255, 0, 0, 0) 80%
+    ),
+    linear-gradient(40deg, #1e32c7, #2e9ae2 85%);
+
+$main-dark-blue: #1a1c2a;
+$main-green: #b8cc0c;
+$error-red: red;
+$main-light-blue: #242838;
+$yesscredit-light-blue: #00265e;
+$yesscredit-dark-blue: #010f41;
+$main-lightgray-color: lightgray;
+
+// div decorations
+$main-box-shadow: 0 10px 15px 2px rgb(0 0 0 / 10%);
+$video-box-shadow: 0 9px 16px 3px rgb(0 0 0 / 45%);

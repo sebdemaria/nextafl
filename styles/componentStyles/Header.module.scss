@@ -1,0 +1,27 @@
+@import "./../sass-utils/indexUtils.module";
+
+.headerDark {
+    background-color: $main-light-blue;
+    box-shadow: 0 3px 15px 3px rgb(0 0 0 / 45%);
+}
+
+.headerTransparent {
+    background-color: transparent;
+}
+
+.header {
+    color: white;
+    font-weight: 500;
+    padding: 1rem 0 1.2rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+.menuIcon {
+    transition: 0.2s ease-in-out;
+}
+
+.collapse {
+    width: 100%;
+}

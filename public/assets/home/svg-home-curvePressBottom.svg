@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 -130 814.62 203.13" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.cls-1{fill:#badff0;opacity:0.2;}.cls-2{fill:#242838;}</style>
+    <linearGradient id="colorful-gradient" x1="0.15" y1="0" x2="1" y2="0.15" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="matrix(1 0 0 1 0 0)">
+        <stop id="big-1-triple-curve-main-fill-0" offset="0%" stop-color="rgb(83,13,104)"/>
+        <stop id="big-1-triple-curve-main-fill-1" offset="16%" stop-color="rgb(18,31,124)"/>
+        <stop id="big-1-triple-curve-main-fill-2" offset="32%" stop-color="rgb(13,76,153)"/>
+        <stop id="big-1-triple-curve-main-fill-3" offset="48%" stop-color="rgb(37,131,179)"/>
+        <stop id="big-1-triple-curve-main-fill-2" offset="64%" stop-color="rgb(13,76,153)"/>
+        <stop id="big-1-triple-curve-main-fill-1" offset="82%" stop-color="rgb(18,31,124)"/>
+        <stop id="big-1-triple-curve-main-fill-0" offset="100%" stop-color="rgb(83,13,104)"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M814.61,10.38C757.5-7.35,695,6.64,636.36,19.79,525.64,44.61,411,66.07,298.5,49.46,210.06,36.39,124,0,34.84,8A299.1,299.1,0,0,0,0,13.29v89.17c135.23,1.05,269.78,17.53,404.69,26.89,136.93,9.5,276.17,11.46,409.92-17.13Z"/>
+  <path class="cls-2" d="M708.92,25.76c-83.85-8-164.86,28.51-248,41.62C355.05,84.06,247.17,62.52,143,37.61,95.31,26.2,47.74,12.41.53,22v181.1H815.14V55.31C780.1,40.84,746.68,29.39,708.92,25.76Z"/>
+</svg>
