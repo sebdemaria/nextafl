@@ -1,0 +1,71 @@
+@import "./../../sass-utils/indexUtils.module";
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+.slideIn {
+    animation-name: slideIn;
+}
+
+.animate {
+    animation-direction: alternate;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+}
+
+.languageSelector {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid $main-green;
+    border-radius: 50em;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    padding: 0.3em 0;
+}
+
+.languageOptions {
+    background-color: #3030307c;
+    border: 1px solid $main-green;
+    border-radius: 10%;
+    display: flex;
+    padding: 0;
+    width: 10%;
+
+    .dropdownItem {
+        list-style-type: none;
+
+        font-weight: 500;
+
+        a {
+            padding: 0.3em 0;
+            display: inline-block;
+            width: 100%;
+        }
+
+        :hover {
+            background-color: rgba(136, 136, 136, 0.425);
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .languageSelector {
+        // margin-top: 1em;
+    }
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useScroll } from "../../hooks/useScroll";
 import HeaderDumb from "./HeaderDumb";
 
 interface NavItem {
@@ -14,7 +15,9 @@ interface NavItems {
 const Header = () => {
     const [isOpen, setisOpen] = useState<boolean>(false);
 
-    function getNavItems(): NavItems {
+    const [headerDark] = useScroll(isOpen);
+
+    const getNavItems = (): NavItems => {
         return {
             NavItems: [
                 {
@@ -43,7 +46,7 @@ const Header = () => {
                 },
             ],
         };
-    }
+    };
 
     const onToggle = () => {
         setisOpen((isOpen) => !isOpen);
@@ -54,6 +57,7 @@ const Header = () => {
             getNavItems={getNavItems}
             onToggle={onToggle}
             isOpen={isOpen}
+            headerDark={headerDark}
         />
     );
 };

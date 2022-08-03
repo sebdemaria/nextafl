@@ -4,9 +4,8 @@ import { appWithTranslation } from "next-i18next";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import { theme } from "../styles/UIStyles/themes/theme";
-// import { useEffect, useState } from "react";
 
-import FontStyles from "../styles/UIStyles/themes/fonts/fontStyles";
+import FontStyles from "../styles/UIStyles/themes/fonts/FontStyles";
 
 // ! this following global css line style MUST be removed
 // ! and tags in WTI MUST be corrected to remove

@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import Link from "../Link";
 import LanguageSelector from "../UI/LanguageSelector";
 
-import styles from "../../styles/componentStyles/Navigation.module.scss";
+// import styles from "../../styles/componentStyles/Navigation.module.scss";
 
 interface NavigationProps {
     navItems?: {
@@ -33,6 +33,7 @@ const Navigation = ({ navItems = [] }: NavigationProps) => {
                 {navItems.map((Item, index) => (
                     <Link href={Item.route ? Item.route : "#"} key={index}>
                         <Text
+                            fontSize={{ lg: "85%", xl: "1em" }}
                             my={2}
                             mx={{ lg: "1em" }}
                             w={"max-content"}
@@ -46,7 +47,7 @@ const Navigation = ({ navItems = [] }: NavigationProps) => {
                     </Link>
                 ))}
 
-                <LanguageSelector classname={styles.languageSelector} />
+                <LanguageSelector />
             </Flex>
         </Stack>
     );

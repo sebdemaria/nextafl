@@ -3,16 +3,19 @@
 .headerDark {
     background-color: $main-light-blue;
     box-shadow: 0 3px 15px 3px rgb(0 0 0 / 45%);
+    padding: 0 0 0.5rem 0 !important;
+    transition: 0.2s ease-in-out;
 }
 
 .headerTransparent {
     background-color: transparent;
+    transition: 0.2s ease-in-out;
 }
 
 .header {
     color: white;
     font-weight: 500;
-    padding: 1rem 0 1.2rem 0;
+    padding: 1rem 0 2rem 0;
     position: fixed;
     width: 100%;
     z-index: 999999;

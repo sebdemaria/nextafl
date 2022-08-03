@@ -6,5 +6,4 @@ module.exports = {
         defaultLocale: "es",
         localePath: path.resolve("./public/locales"),
     },
-    ns: ["common"],
 };

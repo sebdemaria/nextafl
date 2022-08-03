@@ -1,4 +1,4 @@
-import type { GetStaticProps } from "next";
+import type { GetServerSideProps } from "next";
 import { NextPageWithLayout } from "./page";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -8,7 +8,7 @@ import Head from "next/head";
 import Layout from "../components/templates/base/Layout";
 import PreRegisterScreen from "../components/screens/PreRegisterScreen";
 
-export const getServerSideProps: GetStaticProps = async ({ locale }) => {
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
     const OAUTH_CLIENT_ID = process.env.OAUTH_CLIENT_ID;
     const OAUTH_CLIENT_SECRET = process.env.OAUTH_CLIENT_SECRET;
     const BASE_URL = process.env.BASE_API_URL;

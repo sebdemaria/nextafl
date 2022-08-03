@@ -1,13 +1,13 @@
 import { extendTheme } from "@chakra-ui/react";
-import { ButtonStyles as Button } from "./components/Button/buttonStyles";
-import { InputStyles as Input } from "./components/Input/inputStyles";
-import { CardStyles as Card } from "./components/Card/cardStyles";
-import { SelectStyles as Select } from "./components/Select/selectStyles";
-import { CheckboxStyles as Checkbox } from "./components/Checkbox/checkboxStyles";
-import { RadioStyles as Radio } from "./components/Radio/radioStyles";
+import { ButtonStyles as Button } from "./components/Button/ButtonStyles";
+import { InputStyles as Input } from "./components/Input/InputStyles";
+import { CardStyles as Card } from "./components/Card/CardStyles";
+import { SelectStyles as Select } from "./components/Select/SelectStyles";
+import { CheckboxStyles as Checkbox } from "./components/Checkbox/CheckboxStyles";
+import { RadioStyles as Radio } from "./components/Radio/RadioStyles";
 import { styles } from "./styles";
-import { colors } from "./foundations/colors";
-import { breakpoints } from "./foundations/breakpoints";
+import { colors } from "./foundations/Colors";
+import { breakpoints } from "./foundations/Breakpoints.ts";
 
 export const theme = extendTheme({
     styles,

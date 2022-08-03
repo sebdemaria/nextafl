@@ -126,7 +126,6 @@ const HomeScreenDumb = () => {
                     sm: "11em",
                     lg: "11em",
                     xl: "7em",
-                    "2xl": "4em",
                 }}
                 wrap={"wrap"}
                 gap={{ "2xl": "3em" }}
@@ -202,7 +201,7 @@ const HomeScreenDumb = () => {
                     w={{
                         md: "45%",
                         xl: "40%",
-                        "2xl": "40%",
+                        "2xl": "35%",
                     }}
                 >
                     <Image

@@ -14,16 +14,22 @@ interface HeaderProps {
     getNavItems(): any;
     onToggle(): void;
     isOpen: boolean;
+    headerDark: boolean;
 }
 
-const HeaderDumb = ({ getNavItems, onToggle, isOpen }: HeaderProps) => {
+const HeaderDumb = ({
+    getNavItems,
+    onToggle,
+    isOpen,
+    headerDark,
+}: HeaderProps) => {
     const items = getNavItems();
     const { NavItems } = items;
 
     let breakpoint = useBreakpoint();
 
     return (
-        <HeaderComponent classProp="">
+        <HeaderComponent headerDark={headerDark}>
             {/* Navbar Brand */}
             <Link href="/">
                 <Box
@@ -51,6 +57,7 @@ const HeaderDumb = ({ getNavItems, onToggle, isOpen }: HeaderProps) => {
                 display={{ base: "inline-block", lg: "none" }}
                 role={"button"}
                 aria-label="menu toggler"
+                id="hamburger"
                 onClick={onToggle}
                 mt={3}
                 me={{ base: "0.5em", sm: "2em" }}

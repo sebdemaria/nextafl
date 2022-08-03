@@ -2,19 +2,21 @@ import { Container, Flex } from "@chakra-ui/react";
 import styles from "../../styles/componentStyles/Header.module.scss";
 
 interface HeaderProps {
-    classProp?: string;
+    headerDark?: boolean;
     moreClass?: string;
     children?: React.ReactNode;
 }
 
 export const Header = ({
-    classProp = "",
+    headerDark = false,
     moreClass = "",
     children,
 }: HeaderProps) => {
     return (
         <header
-            className={`${styles.header} ${styles[classProp]} ${moreClass}`}
+            className={`${styles.header} ${
+                headerDark ? styles.headerDark : styles.headerTransparent
+            } ${moreClass}`}
         >
             <Container maxW="80em">
                 <Flex

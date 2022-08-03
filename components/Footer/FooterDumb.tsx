@@ -24,10 +24,10 @@ const FooterDumb = () => {
                 }}
             >
                 <Image
-                    src={logo}
                     alt="Afluenta_finance_logo"
                     className={styles.logo}
                     layout="responsive"
+                    src={logo}
                 />
             </Box>
 
@@ -42,7 +42,7 @@ const FooterDumb = () => {
                 {t("web-footer-infoParagraph")}
             </Text>
 
-            <LanguageSelector classname={styles.languageSelector} />
+            <LanguageSelector top="1em" />
         </FooterComponent>
     );
 };
