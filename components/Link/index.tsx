@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import styles from "../../styles/componentStyles/Link.module.scss";
+import styles from "@styles/componentStyles/Link.module.scss";
 
 interface LinkProps {
     href: string;

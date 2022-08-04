@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
-import Button from "../UI/ButtonChakra/Button";
-import Input from "../UI/InputChakra/Input";
+import Button from "@components/UI/ButtonChakra/Button";
+import Input from "@components/UI/InputChakra/Input";
 import { Form } from "formik";
 
 interface MailingComponentProps {

@@ -1,30 +1,27 @@
-import {
-    useTranslateHtml,
-    useTranslation,
-} from "../../../hooks/useTranslateHtml";
+import { useTranslateHtml, useTranslation } from "@hooks/useTranslateHtml";
 
 import Image from "next/image";
 import NextLink from "next/link";
 import { Box, Flex, Heading, HStack, Link, Text } from "@chakra-ui/react";
-import MailingComponent from "../../MailingComponent";
-import Button from "../../UI/ButtonChakra/Button";
-import Card from "../../Card";
-import VideoPlayer from "../../VideoPlayer";
+import MailingComponent from "@components/MailingComponent";
+import Button from "@components/UI/ButtonChakra/Button";
+import Card from "@components/Card";
+import VideoPlayer from "@components/VideoPlayer";
 
-import homeMainImage from "../../../public/assets/home/image-home-mainThing.png";
-import curveBottom from "../../../public/assets/home/svg-home-curvePressBottom.svg";
-import CurvedDivider from "../../CurvedDivider";
-import cardImg1 from "../../../public/assets/home/icon-home-HIW-1.png";
-import cardImg2 from "../../../public/assets/home/icon-home-HIW-2.png";
-import cardImg3 from "../../../public/assets/home/icon-home-HIW-3.png";
-import cardImg4 from "../../../public/assets/home/icon-home-HIW-4.png";
-import cardImg5 from "../../../public/assets/home/icon-home-HIW-5.png";
-import cardImg6 from "../../../public/assets/home/icon-home-HIW-6.png";
-import fourthSectionImg1 from "../../../public/assets/home/icon-home-whySecurity.png";
-import fourthSectionImg2 from "../../../public/assets/home/icon-home-whyReturns.png";
-import fourthSectionImg3 from "../../../public/assets/home/icon-home-whyRegional.png";
-import fourthSectionImg4 from "../../../public/assets/home/icon-home-whyReliability.png";
-import whitepaper from "../../../public/assets/home/icon-home-whitepaper.png";
+import homeMainImage from "@public/assets/home/image-home-mainThing.png";
+import curveBottom from "@public/assets/home/svg-home-curvePressBottom.svg";
+import CurvedDivider from "@components/CurvedDivider";
+import cardImg1 from "@public/assets/home/icon-home-HIW-1.png";
+import cardImg2 from "@public/assets/home/icon-home-HIW-2.png";
+import cardImg3 from "@public/assets/home/icon-home-HIW-3.png";
+import cardImg4 from "@public/assets/home/icon-home-HIW-4.png";
+import cardImg5 from "@public/assets/home/icon-home-HIW-5.png";
+import cardImg6 from "@public/assets/home/icon-home-HIW-6.png";
+import fourthSectionImg1 from "@public/assets/home/icon-home-whySecurity.png";
+import fourthSectionImg2 from "@public/assets/home/icon-home-whyReturns.png";
+import fourthSectionImg3 from "@public/assets/home/icon-home-whyRegional.png";
+import fourthSectionImg4 from "@public/assets/home/icon-home-whyReliability.png";
+import whitepaper from "@public/assets/home/icon-home-whitepaper.png";
 
 import styles from "/styles/screenStyles/Home.module.scss";
 

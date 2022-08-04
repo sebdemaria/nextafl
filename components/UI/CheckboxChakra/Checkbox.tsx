@@ -7,8 +7,6 @@ import {
 } from "@chakra-ui/react";
 import { useField } from "formik";
 
-// import styles from "../../../styles/UIStyles/scss/Input.module.scss";
-
 interface CheckboxProps {
     ariaLabel?: string;
 

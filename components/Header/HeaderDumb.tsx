@@ -1,15 +1,14 @@
 import Image from "next/image";
 
-// import Button from "../UI/ButtonChakra/Button";
 import { Header as HeaderComponent } from "./Header";
-import Link from "../Link";
-import Navigation from "../Navigation";
+import Link from "@components/Link";
+import Navigation from "@components/Navigation";
 import { Box, Collapse, IconButton, useBreakpoint } from "@chakra-ui/react";
 
-import logo from "../../public/assets/header/logo-afluenta-complete.png";
+import logo from "@public/assets/header/logo-afluenta-complete.png";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
-import styles from "../../styles/componentStyles/Header.module.scss";
+import styles from "@styles/componentStyles/Header.module.scss";
 interface HeaderProps {
     getNavItems(): any;
     onToggle(): void;

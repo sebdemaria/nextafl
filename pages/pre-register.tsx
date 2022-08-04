@@ -2,11 +2,11 @@ import type { GetServerSideProps } from "next";
 import { NextPageWithLayout } from "./page";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { getCountries } from "../httpServices/forms/httpCountries";
+import { getCountries } from "@httpServices/forms/httpCountries";
 
 import Head from "next/head";
-import Layout from "../components/templates/base/Layout";
-import PreRegisterScreen from "../components/screens/PreRegisterScreen";
+import Layout from "@components/templates/base/Layout";
+import PreRegisterScreen from "@components/screens/PreRegisterScreen";
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
     const OAUTH_CLIENT_ID = process.env.OAUTH_CLIENT_ID;

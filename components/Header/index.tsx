@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { useScroll } from "../../hooks/useScroll";
+import { useScroll } from "@hooks/useScroll";
 import HeaderDumb from "./HeaderDumb";
+import { useRouter } from "next/router";
 
 interface NavItem {
     route: string;
@@ -13,6 +14,11 @@ interface NavItems {
 }
 
 const Header = () => {
+    // had to do this awful thing cause i couldn't use staging vars to set the corresponding envs for every environment cause of the infra
+    const env = process.env.NODE_ENV == "production";
+    const router = useRouter();
+    const { locale } = router;
+
     const [isOpen, setisOpen] = useState<boolean>(false);
 
     const [headerDark] = useScroll(isOpen);
@@ -21,27 +27,47 @@ const Header = () => {
         return {
             NavItems: [
                 {
-                    route: "/",
+                    route: env
+                        ? locale == "en"
+                            ? "/en/business"
+                            : "/es/negocio"
+                        : "/",
                     tag: "web-header-business",
                 },
                 {
-                    route: "/",
+                    route: env
+                        ? locale == "en"
+                            ? "/en/technology"
+                            : "/es/tecnologia"
+                        : "/",
                     tag: "web-header-technology",
                 },
                 {
-                    route: "/",
+                    route: env
+                        ? locale == "en"
+                            ? "/en/mission"
+                            : "/es/mision"
+                        : "/",
                     tag: "web-header-mission",
                 },
                 {
-                    route: "/",
+                    route: env
+                        ? locale == "en"
+                            ? "/en/blog"
+                            : "/es/blog"
+                        : "/",
                     tag: "web-header-educationcenter",
                 },
                 {
-                    route: "/",
+                    route: "/pre-register",
                     tag: "Whitepaper",
                 },
                 {
-                    route: "/",
+                    route: env
+                        ? locale == "en"
+                            ? "/en/help"
+                            : "/es/ayuda"
+                        : "/",
                     tag: "web-header-help",
                 },
             ],

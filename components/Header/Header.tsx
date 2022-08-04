@@ -1,5 +1,5 @@
 import { Container, Flex } from "@chakra-ui/react";
-import styles from "../../styles/componentStyles/Header.module.scss";
+import styles from "@styles/componentStyles/Header.module.scss";
 
 interface HeaderProps {
     headerDark?: boolean;

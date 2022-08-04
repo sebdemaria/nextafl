@@ -32,3 +32,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+-   useful video for env variables managing on dev, test and prod environments
+    https://www.youtube.com/watch?v=Q9QxS0NJjJg&ab_channel=EricMurphy
+
+    https://nextjs.org/docs/basic-features/environment-variables
+
+    .env file:
+
+    BASE_API_URL=http://afluenta_crypto.afl/
+    OAUTH_CLIENT_SECRET=aJiE94X7dV5YIvyqik2pam8IpY6TdDS7dkn1HS9c
+    OAUTH_CLIENT_ID=3
+
+    .env.local file:
+
+    WEBTRANSLATEIT_PUBLIC_KEY = proj_pub_w5OsEB8a4naaLe_HXOh_jw

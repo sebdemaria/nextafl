@@ -1,9 +1,7 @@
 import { Flex, Stack, Text } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import Link from "../Link";
-import LanguageSelector from "../UI/LanguageSelector";
-
-// import styles from "../../styles/componentStyles/Navigation.module.scss";
+import Link from "@components/Link";
+import LanguageSelector from "@components/UI/LanguageSelector";
 
 interface NavigationProps {
     navItems?: {

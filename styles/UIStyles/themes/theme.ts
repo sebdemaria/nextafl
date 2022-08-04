@@ -7,7 +7,7 @@ import { CheckboxStyles as Checkbox } from "./components/Checkbox/CheckboxStyles
 import { RadioStyles as Radio } from "./components/Radio/RadioStyles";
 import { styles } from "./styles";
 import { colors } from "./foundations/Colors";
-import { breakpoints } from "./foundations/Breakpoints.ts";
+import { breakpoints } from "./foundations/Breakpoints";
 
 export const theme = extendTheme({
     styles,

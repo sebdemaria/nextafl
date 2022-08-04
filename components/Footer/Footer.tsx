@@ -1,6 +1,6 @@
 import { Container, Box } from "@chakra-ui/react";
 
-import styles from "../../styles/componentStyles/Footer.module.scss";
+import styles from "@styles/componentStyles/Footer.module.scss";
 
 interface FooterProps {
     classProp?: string;

@@ -1,4 +1,4 @@
-@import "./../../sass-utils/indexUtils.module";
+@import "@styles/sass-utils/indexUtils.module";
 
 .card::before {
     -webkit-mask: linear-gradient(#fff 0 0) content-box,

@@ -1,5 +1,4 @@
 import { Button as ButtonChakra } from "@chakra-ui/react";
-// import styles from "../../../styles/UIStyles/scss/Button.module.scss";
 
 interface ButtonProps {
     ariaLabel?: string;

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Button, Flex, ListItem, UnorderedList } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
-import styles from "../../styles/UIStyles/scss/LanguageSelector.module.scss";
+import styles from "@styles/UIStyles/scss/LanguageSelector.module.scss";
 
 const LanguageSelector = ({ ...props }) => {
     const router = useRouter();

@@ -1,8 +1,8 @@
 import type { GetStaticProps } from "next";
 
 import Head from "next/head";
-import Layout from "../components/templates/base/Layout";
-import HomeScreen from "../components/screens/HomeScreen";
+import Layout from "@components/templates/base/Layout";
+import HomeScreen from "@components/screens/HomeScreen";
 
 import { NextPageWithLayout } from "./page";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";

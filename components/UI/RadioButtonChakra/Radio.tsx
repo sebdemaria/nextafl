@@ -5,7 +5,6 @@ import {
     FormLabel,
     Radio as RadioChakra,
 } from "@chakra-ui/react";
-// import styles from "../../../styles/UIStyles/scss/Input.module.scss";
 
 interface RadioProps {
     ariaLabel?: string;

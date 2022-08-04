@@ -1,12 +1,12 @@
 import { Footer as FooterComponent } from "./Footer";
-import LanguageSelector from "../UI/LanguageSelector";
+import LanguageSelector from "@components/UI/LanguageSelector";
 import { Box, Text } from "@chakra-ui/react";
 
 import Image from "next/image";
-import logo from "../../public/assets/header/logo-afluenta-complete.png";
+import logo from "@public/assets/header/logo-afluenta-complete.png";
 import { useTranslation } from "next-i18next";
 
-import styles from "../../styles/componentStyles/Footer.module.scss";
+import styles from "@styles/componentStyles/Footer.module.scss";
 
 const FooterDumb = () => {
     const { t } = useTranslation();

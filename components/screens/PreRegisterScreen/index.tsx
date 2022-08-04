@@ -5,11 +5,11 @@ import { useRouter } from "next/router";
 import * as Yup from "yup";
 import { Formik } from "formik";
 
-import { postPreRegister } from "../../../httpServices/forms/httpPreRegister";
+import { postPreRegister } from "@httpServices/forms/httpPreRegister";
 
 import PreRegisterScreenDumb from "./PreRegisterScreenDumb";
 
-import styles from "/styles/screenStyles/PreRegister.module.scss";
+import styles from "@styles/screenStyles/PreRegister.module.scss";
 
 interface PreRegisterProps {
     countries: {

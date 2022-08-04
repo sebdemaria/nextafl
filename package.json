@@ -8,9 +8,10 @@
         "yarn": "please-use-npm"
     },
     "scripts": {
-        "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
-        "build": "next build",
+        "dev": "node locale && cross-env NODE_OPTIONS='--inspect' next dev",
+        "build": "node locale && next build",
         "start": "next start",
+        "locale": "node locale",
         "analyze": "ANALYZE=true next build",
         "lint": "next lint",
         "prettier": "prettier --write .",

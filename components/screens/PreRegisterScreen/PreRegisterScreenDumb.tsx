@@ -1,17 +1,14 @@
-import {
-    useTranslateHtml,
-    useTranslation,
-} from "../../../hooks/useTranslateHtml";
+import { useTranslateHtml, useTranslation } from "@hooks/useTranslateHtml";
 
 import Image from "next/image";
 import { Flex, Heading, Spinner, Text } from "@chakra-ui/react";
 import { Form } from "formik";
-import { Input, Select, Button, Checkbox } from "../../UI";
+import { Input, Select, Button, Checkbox } from "@components/UI";
 
-import error from "../../../public/assets/form/error.png";
-import success from "../../../public/assets/form/success.png";
+import error from "@public/assets/form/error.png";
+import success from "@public/assets/form/success.png";
 
-import styles from "/styles/screenStyles/PreRegister.module.scss";
+import styles from "@styles/screenStyles/PreRegister.module.scss";
 
 interface PreRegisterDumbProps {
     countries: {

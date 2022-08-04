@@ -1,8 +1,8 @@
-import { Card as ChakraCard } from "../ChakraCustomUI/Card";
+import { Card as ChakraCard } from "@components/ChakraCustomUI/Card";
 
 import Image from "next/image";
 
-import styles from "../../styles/UIStyles/scss/Card.module.scss";
+import styles from "@styles/UIStyles/scss/Card.module.scss";
 
 interface CardProps {
     variant?: string;

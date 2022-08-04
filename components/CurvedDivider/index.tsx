@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import Image from "next/image";
 
-import styles from "/styles/componentStyles/CurvedDivider.module.scss";
+import styles from "@styles/componentStyles/CurvedDivider.module.scss";
 
 interface CurvedDividerProps {
     curvedImagePath: string;
