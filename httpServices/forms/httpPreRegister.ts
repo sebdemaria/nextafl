@@ -23,7 +23,7 @@ export const postPreRegister = async (
         allow_marketing_info = false,
     }: PreRegisterParams,
     token: string,
-    BASE_URL: string = "http://afluenta_crypto.afl/",
+    BASE_URL?: string,
     ENDPOINT: string = "api/api-register"
 ) => {
     await HttpClient(BASE_URL, 50000)

@@ -12,7 +12,7 @@ module.exports = {
     features: {
         emotionAlias: false,
     },
-    staticDirs: ["../public"],
+    staticDirs: ["@public"],
     framework: "@storybook/react",
     core: {
         builder: "@storybook/builder-webpack5",

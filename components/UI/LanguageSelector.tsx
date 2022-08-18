@@ -12,10 +12,12 @@ const LanguageSelector = ({ ...props }) => {
     const router = useRouter();
     const { locale } = router;
 
+    // remove default locale from locales list for select render
+    const geos = router.locales?.filter((locale) => locale !== "default");
+
     const [toggleLanguage, setToggleLanguage] = useState<boolean>(false);
 
     const handleToggleLanguage = () => {
-        console.log(toggleLanguage);
         setToggleLanguage((toggleLanguage) => !toggleLanguage);
     };
 
@@ -33,7 +35,6 @@ const LanguageSelector = ({ ...props }) => {
                 className={styles.languageSelector}
                 fontSize={{ lg: "90%", xl: "1em" }}
                 px="1em"
-                // w={{ lg: "90%", xl: "100%" }}
                 onClick={handleToggleLanguage}
                 variant="outline"
                 _hover={{ background: "#9c9c9c81" }}
@@ -51,7 +52,7 @@ const LanguageSelector = ({ ...props }) => {
                 w="90%"
             >
                 <Flex wrap="wrap" justifyContent={"center"} w="100%">
-                    {router.locales!.map((locale, index) => (
+                    {geos!.map((locale, index) => (
                         <ListItem
                             key={index}
                             className={styles.dropdownItem}
@@ -60,7 +61,11 @@ const LanguageSelector = ({ ...props }) => {
                             w="100%"
                         >
                             <Link href={router.asPath} locale={locale}>
-                                <a>{locale == "es" ? "Español" : "English"}</a>
+                                <a>
+                                    {locale === "es"
+                                        ? "Español"
+                                        : locale === "en" && "English"}
+                                </a>
                             </Link>
                         </ListItem>
                     ))}

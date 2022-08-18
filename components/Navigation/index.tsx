@@ -24,7 +24,8 @@ const Navigation = ({ navItems = [] }: NavigationProps) => {
                 align={"center"}
                 className=""
                 direction={{ base: "column", lg: "row" }}
-                justifyContent={"center"}
+                justifyContent={{ base: "unset", lg: "center" }}
+                h={{ base: "43vh", lg: "unset" }}
                 py={6}
                 w={"100%"}
             >

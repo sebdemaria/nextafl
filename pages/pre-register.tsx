@@ -24,6 +24,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         props: {
             ...(await serverSideTranslations(locale!, ["common"])),
             response: JSON.parse(JSON.stringify(response)),
+            BASE_URL,
             // Will be passed to the page component as props
         },
     };
@@ -31,10 +32,12 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
 
 interface PreRegisterProps {
     response?: any;
+    BASE_URL?: string;
 }
 
 const PreRegister: NextPageWithLayout = ({
     response: { countries, token },
+    BASE_URL,
 }: PreRegisterProps) => {
     return (
         <div>
@@ -45,7 +48,11 @@ const PreRegister: NextPageWithLayout = ({
                     content="Afluenta Finance YessCredit Pre-register."
                 />
             </Head>
-            <PreRegisterScreen countries={countries!} token={token} />
+            <PreRegisterScreen
+                countries={countries!}
+                token={token}
+                BASE_URL={BASE_URL}
+            />
         </div>
     );
 };

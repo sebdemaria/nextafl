@@ -6,23 +6,32 @@ const nextConfig = {
     reactStrictMode: true,
     // insert down here domains for remote image use on Next Image Elements
     images: {
-        domains: ["localhost"],
+        domains: ["localhost", "beta.afluenta.finance", "afluenta.finance"],
     },
+    // a possible way to fix route translation
     // async rewrites() {
-    //     return {
-    //         beforeFiles: [
-    //             {
-    //                 source: "/es/ayuda",
-    //                 destination: "/help",
-    //                 locale: false,
-    //             },
-    //             {
-    //                 source: "/en/help",
-    //                 destination: "/en/help",
-    //                 locale: false,
-    //             },
-    //         ],
-    //     };
+    //     return [
+    //         {
+    //             source: "/es/pre-registro",
+    //             destination: "/es/pre-register",
+    //             locale: false,
+    //         },
+    //         {
+    //             source: "/en/pre-register",
+    //             destination: "/en/pre-registro",
+    //             locale: false,
+    //         },
+    //     ];
+    // },
+    // async redirects() {
+    //     return [
+    //         {
+    //             source: "/en/pre-registro",
+    //             destination: "/en/pre-register",
+    //             permanent: false,
+    //             locale: false,
+    //         },
+    //     ];
     // },
 };
 

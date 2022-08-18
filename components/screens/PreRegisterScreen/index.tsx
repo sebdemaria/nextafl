@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from "react";
+import { useEffect, useReducer, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 
@@ -17,21 +17,38 @@ interface PreRegisterProps {
         title: string;
     }[];
     token: string;
+    BASE_URL?: string;
 }
 
-const PreRegisterScreen = ({ countries, token }: PreRegisterProps) => {
+const buttonStates = {
+    submitted: "submitted",
+    error: "error",
+    loading: "loading",
+};
+
+const PreRegisterScreen = ({
+    countries,
+    token,
+    BASE_URL,
+}: PreRegisterProps) => {
     const { t } = useTranslation();
     const router = useRouter();
 
-    const handleSubmitButtonStyle = (state: any) => {
-        const submitBtn = document.getElementById("submitPreRegister");
+    const [buttonClass, setButtonClass] = useState("");
 
-        if (state.status === "submitted") {
-            submitBtn!.classList.toggle(styles.success);
-        } else if (state.status === "error") {
-            submitBtn!.classList.toggle(styles.error);
-        } else {
-            submitBtn!.classList.toggle(styles.disable);
+    const handleSubmitButtonStyle = ({ status }: any) => {
+        switch (status) {
+            case buttonStates.submitted:
+                setButtonClass(styles.success);
+                break;
+            case buttonStates.error:
+                setButtonClass(styles.error);
+                break;
+            case buttonStates.loading:
+                setButtonClass(styles.disable);
+                break;
+            default:
+                break;
         }
     };
 
@@ -145,7 +162,7 @@ const PreRegisterScreen = ({ countries, token }: PreRegisterProps) => {
                 try {
                     dispatch({ type: "RESTART" });
                     dispatch({ type: "SUBMIT" });
-                    await postPreRegister(values, token);
+                    await postPreRegister(values, token, BASE_URL);
                     dispatch({ type: "SUBMITTED" });
                     setTimeout(() => router.push("/"), 5000);
                 } catch (e) {
@@ -156,7 +173,11 @@ const PreRegisterScreen = ({ countries, token }: PreRegisterProps) => {
                 }
             }}
         >
-            <PreRegisterScreenDumb countries={countries} formState={state} />
+            <PreRegisterScreenDumb
+                countries={countries}
+                formState={state}
+                buttonClass={buttonClass}
+            />
         </Formik>
     );
 };

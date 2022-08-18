@@ -1,6 +1,7 @@
-/public/locales/en/*
-/public/locales/es/*
 /node_modules
 .next
 .env
 .env.*
+public/locales/en/common.json
+public/locales/es/common.json
+node_modules.tar.gz

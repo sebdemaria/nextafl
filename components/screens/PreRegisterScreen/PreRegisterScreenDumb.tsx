@@ -21,6 +21,7 @@ interface PreRegisterDumbProps {
         isLoading: boolean;
         message: string;
     };
+    buttonClass: string;
 }
 
 const buttonStatus = (status: string, t: any): React.ReactNode => {
@@ -41,6 +42,7 @@ const buttonStatus = (status: string, t: any): React.ReactNode => {
 const PreRegisterScreenDumb = ({
     countries,
     formState: { status, isLoading, message },
+    buttonClass,
 }: PreRegisterDumbProps) => {
     const [tr] = useTranslateHtml();
     const { t } = useTranslation();
@@ -190,10 +192,10 @@ const PreRegisterScreenDumb = ({
                         />
                         <Button
                             id="submitPreRegister"
+                            moreClass={buttonClass}
                             display="block"
                             mt={{ base: "0.5em", lg: "0" }}
                             m="auto"
-                            // py='auto'
                             type="submit"
                             transition={"all 0.7s ease-in-out"}
                             w="90%"

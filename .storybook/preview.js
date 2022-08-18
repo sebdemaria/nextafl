@@ -1,6 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import FontStyles from "../styles/UIStyles/themes/fonts/fontStyles";
-import { theme } from "../styles/UIStyles/themes/theme";
+import FontStyles from "@styles/UIStyles/themes/fonts/FontStyles";
+import { theme } from "@styles/UIStyles/themes/theme";
 
 export const decorators = [
     (Story) => (

@@ -16,6 +16,7 @@ interface NavItems {
 const Header = () => {
     // had to do this awful thing cause i couldn't use staging vars to set the corresponding envs for every environment cause of the infra
     const env = process.env.NODE_ENV == "production";
+    const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
     const router = useRouter();
     const { locale } = router;
 
@@ -28,33 +29,33 @@ const Header = () => {
             NavItems: [
                 {
                     route: env
-                        ? locale == "en"
-                            ? "/en/business"
-                            : "/es/negocio"
+                        ? locale === "en"
+                            ? `${BASE_URL}en/business`
+                            : `${BASE_URL}es/negocio`
                         : "/",
                     tag: "web-header-business",
                 },
                 {
                     route: env
-                        ? locale == "en"
-                            ? "/en/technology"
-                            : "/es/tecnologia"
+                        ? locale === "en"
+                            ? `${BASE_URL}en/technology`
+                            : `${BASE_URL}es/tecnologia`
                         : "/",
                     tag: "web-header-technology",
                 },
                 {
                     route: env
-                        ? locale == "en"
-                            ? "/en/mission"
-                            : "/es/mision"
+                        ? locale === "en"
+                            ? `${BASE_URL}en/mission`
+                            : `${BASE_URL}es/mision`
                         : "/",
                     tag: "web-header-mission",
                 },
                 {
                     route: env
-                        ? locale == "en"
-                            ? "/en/blog"
-                            : "/es/blog"
+                        ? locale === "en"
+                            ? `${BASE_URL}en/blog`
+                            : `${BASE_URL}es/blog`
                         : "/",
                     tag: "web-header-educationcenter",
                 },
@@ -64,9 +65,9 @@ const Header = () => {
                 },
                 {
                     route: env
-                        ? locale == "en"
-                            ? "/en/help"
-                            : "/es/ayuda"
+                        ? locale === "en"
+                            ? `${BASE_URL}en/help`
+                            : `${BASE_URL}es/ayuda`
                         : "/",
                     tag: "web-header-help",
                 },

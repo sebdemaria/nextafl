@@ -16,6 +16,7 @@ export const getCountries = async ({
 }: getCountriesProps) => {
     try {
         const token = await HttpToken({
+            BASE_URL,
             OAUTH_CLIENT_ID,
             OAUTH_CLIENT_SECRET,
         });
